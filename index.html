@@ -14,20 +14,23 @@
         <h1>Poem Generator</h1>
       </header>
       <main>
-        <form id="poem-form">
-          <label for="prompt">Enter a prompt for your poem:</label>
-          <input
-            class="instruction"
-            type="text"
-            id="prompt"
-            name="prompt"
-            autocomplete="off"
-            autofocus
-            required
-          />
-          <button type="submit" class="submit-button">Generate Poem</button>
-        </form>
-        <div id="poem-output" class="poem-output"></div>
+        <div class="form-container">
+          <form id="poem-form">
+            <input
+              placeholder="Enter a prompt for your poem"
+              class="instruction"
+              type="text"
+              id="prompt"
+              name="prompt"
+              autocomplete="off"
+              autofocus
+              required
+            />
+            <button type="submit" class="submit-button">Generate Poem</button>
+          </form>
+          <div class="example">i.e. Flowers, Love or Nature</div>
+        </div>
+        <div id="poem" class="poem hidden"></div>
       </main>
       <footer>
         This AI project was coded by

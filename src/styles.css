@@ -18,12 +18,7 @@ header {
 }
 
 form {
-  padding: 30px;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
-  margin-bottom: 30px;
 }
 
 .instruction {
@@ -46,7 +41,7 @@ form {
   width: 150px;
 }
 
-.poem-output {
+.poem {
   font-size: 16px;
   background-color: white;
   padding: 20px;
@@ -55,6 +50,7 @@ form {
   border-left: 3px solid #272044;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+  display: block;
 }
 
 footer {
@@ -67,6 +63,36 @@ a {
   color: #7841ac;
   text-decoration: none;
 }
-a:hover {
-  text-decoration: underline;
+
+.form-container {
+  margin-bottom: 30px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.example {
+  margin-top: 7px;
+  font-size: 12px;
+  color: #666;
+}
+
+.hidden {
+  display: none;
+}
+
+.blink-smooth {
+  /* 1.5s duration, linear timing, loops forever */
+  animation: blink-fade 1.5s linear infinite;
+}
+
+@keyframes blink-fade {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
