@@ -7,75 +7,78 @@
     <title>AI Poem Generator</title>
   </head>
   <body>
-    <header>
-      <h1>Poem Generator</h1>
-    </header>
-    <main>
-      <form id="poem-form">
-        <label for="prompt">Enter a prompt for your poem:</label>
-        <input
-          type="text"
-          id="prompt"
-          name="prompt"
-          autocomplete="off"
-          autofocus
-          required
-        />
-        <button type="submit">Generate Poem</button>
-      </form>
-      <div id="poem-output">
-        Where else could you find a creature
-        <br />
-        possessing the nobility without pride,
-        <br />
+    <div class="container">
+      <header>
+        <h1>Poem Generator</h1>
+      </header>
+      <main>
+        <form id="poem-form">
+          <label for="prompt">Enter a prompt for your poem:</label>
+          <input
+            class="instruction"
+            type="text"
+            id="prompt"
+            name="prompt"
+            autocomplete="off"
+            autofocus
+            required
+          />
+          <button type="submit" class="submit-button">Generate Poem</button>
+        </form>
+        <div id="poem-output" class="poem-output">
+          Where else could you find a creature
+          <br />
+          possessing the nobility without pride,
+          <br />
 
-        the friendship without envy,
-        <br />
+          the friendship without envy,
+          <br />
 
-        or the beauty without vanity?
-        <br />
+          or the beauty without vanity?
+          <br />
 
-        Here was grace laced with muscle,
-        <br />
+          Here was grace laced with muscle,
+          <br />
 
-        and strength confined by gentleness.
-        <br />
+          and strength confined by gentleness.
+          <br />
 
-        He served without servility;
-        <br />
+          He served without servility;
+          <br />
 
-        he fought without enmity.
-        <br />
+          he fought without enmity.
+          <br />
 
-        There is nothing so powerful,
-        <br />
+          There is nothing so powerful,
+          <br />
 
-        nothing less violent.
-        <br />
+          nothing less violent.
+          <br />
 
-        There is nothing so quick,
-        <br />
+          There is nothing so quick,
+          <br />
 
-        nothing more patient.
-      </div>
-    </main>
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/mrstetreault" target="_blank"
-        >Eden Tetreault</a
-      >
-      and is
-      <a
-        href="https://github.com/mrstetreault/poem-generator-et"
-        target="_blank"
-      >
-        open-sourced on GitHub</a
-      >
-      and is
-      <a href="https://ai-poem-generator-et.netlify.app/" target="_blank"
-        >hosted on Netlify</a
-      >.
-    </footer>
+          nothing more patient.
+        </div>
+      </main>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/mrstetreault" target="_blank"
+          >Eden Tetreault</a
+        >
+        and is
+        <a
+          href="https://github.com/mrstetreault/poem-generator-et"
+          target="_blank"
+        >
+          open-sourced on GitHub</a
+        >
+        and is
+        <a href="https://ai-poem-generator-et.netlify.app/" target="_blank"
+          >hosted on Netlify</a
+        >.
+      </footer>
+    </div>
     <script src="src/script.js"></script>
   </body>
 </html>

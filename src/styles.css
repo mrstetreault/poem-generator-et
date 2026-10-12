@@ -1,0 +1,72 @@
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+.container {
+  margin: 120px auto;
+  max-width: 600px;
+}
+h1 {
+  font-size: 36px;
+  line-height: 1.5;
+  font-weight: 800;
+  color: #272044;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+form {
+  padding: 30px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.instruction {
+  padding: 16px;
+  border: 1px solid #ccc;
+  width: 80%;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.submit-button {
+  padding: 16px 24px;
+  border: none;
+  background-color: #7841ac;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: 10px;
+  width: 150px;
+}
+
+.poem-output {
+  font-size: 16px;
+  background-color: white;
+  padding: 20px;
+  line-height: 2;
+  font-weight: 400;
+  border-left: 3px solid #272044;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+a {
+  color: #7841ac;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
