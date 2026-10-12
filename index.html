@@ -4,10 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/styles.css" />
-    <title>Poem Generator</title>
+    <title>AI Poem Generator</title>
   </head>
   <body>
-    <h1>Poem Generator</h1>
+    <header>
+      <h1>Poem Generator</h1>
+    </header>
+    <main>
+      <form id="poem-form">
+        <label for="prompt">Enter a prompt for your poem:</label>
+        <input
+          type="text"
+          id="prompt"
+          name="prompt"
+          autocomplete="off"
+          autofocus
+          required
+        />
+        <button type="submit">Generate Poem</button>
+      </form>
+      <div id="poem-output">
+        Where else could you find a creature
+        <br />
+        possessing the nobility without pride,
+        <br />
+
+        the friendship without envy,
+        <br />
+
+        or the beauty without vanity?
+        <br />
+
+        Here was grace laced with muscle,
+        <br />
+
+        and strength confined by gentleness.
+        <br />
+
+        He served without servility;
+        <br />
+
+        he fought without enmity.
+        <br />
+
+        There is nothing so powerful,
+        <br />
+
+        nothing less violent.
+        <br />
+
+        There is nothing so quick,
+        <br />
+
+        nothing more patient.
+      </div>
+    </main>
     <footer>
       This AI project was coded by
       <a href="https://github.com/mrstetreault" target="_blank"
