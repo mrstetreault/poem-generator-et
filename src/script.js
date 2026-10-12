@@ -1,5 +1,5 @@
-function displayPoem(response) {
-  new Typewriter("#poem", {
+function displayRecipe(response) {
+  new Typewriter("#recipes", {
     strings: response.data.answer,
     autoStart: true,
     delay: 1,
@@ -7,23 +7,23 @@ function displayPoem(response) {
   });
 }
 
-function generatePoem(event) {
+function generateRecipe(event) {
   event.preventDefault();
 
   let instructionsInput = document.querySelector("#prompt").value;
   let apiKey = "3a335bb48bo85f01c326tf9592be14f5";
   let prompt =
-    "User instructions are: Generate a poem about " + instructionsInput;
+    "User instructions are: Generate a recipe for " + instructionsInput;
   let context =
-    "You are a romantic poet expert You are a romantic Poem expert and love to write short poems. You mission is to generate a 4 line poem and separate each line with a <br />. Make sure to follow the user instructions. Do not include a title to the poem. Sign the poem with 'SheCodes AI' inside a <strong> element at the end of the poem and NOT at the beginning";
+    "You are a esteamed chef with expert knowledge of all food. You mission is to generate a recipe with step by step instructions and separate each line with a <br />. Insert an ingredient list at the beginning of the recipe. Make sure to follow the user instructions. Do not include a title to the recipe. Insert a <br /> and sign the recipe with 'SheCodes AI' inside a <strong> element at the end of the recipe and NOT at the beginning";
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
-  let poemElement = document.querySelector("#poem");
-  poemElement.classList.remove("hidden");
-  poemElement.innerHTML = `<div class="blink-smooth">Generating a poem about ${instructionsInput}</div>`;
+  let recipeElement = document.querySelector("#recipes");
+  recipeElement.classList.remove("hidden");
+  recipeElement.innerHTML = `<div class="blink-smooth">Generating a recipe for ${instructionsInput}</div>`;
 
-  axios.get(apiURL).then(displayPoem);
+  axios.get(apiURL).then(displayRecipe);
 }
 
-let poemFormElement = document.querySelector("#poem-form");
-poemFormElement.addEventListener("submit", generatePoem);
+let recipeFormElement = document.querySelector("#recipe-form");
+recipeFormElement.addEventListener("submit", generateRecipe);
